@@ -5,7 +5,7 @@ import (
 	"math"
 )
 
-func generateSine(steps float64) {
+func GenerateSine(steps float64) {
 	var (
 		twopi float64
 		i     float64
@@ -15,6 +15,6 @@ func generateSine(steps float64) {
 
 	for i = 0; i < steps; i++ {
 		samp := math.Sin(angleincr * i)
-		fmt.Printf("%.02f\n", samp)
+		fmt.Printf("%.06f\n", samp)
 	}
 }
